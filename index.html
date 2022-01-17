@@ -14,7 +14,7 @@
     <title>Blackjack</title>
 </head>
 
-<body>
+
     <main>
         <header class="header">
             <h1 class="header__title"> Blackjack Game</h1>
@@ -23,19 +23,13 @@
 
             <div class="board__cards">
 
-                <div class="board__cards__player cardsPlayer0" class="divCartas">
-                    <img class="card" src="assets/cartas/5C.png" alt="">
-                    <img class="card" src="assets/cartas/5C.png" alt="">
-                    <img class="card" src="assets/cartas/5C.png" alt="">
-
-                    <img class="card" src="assets/cartas/5C.png" alt="">
-
+                <div class="board__cards__player cardsPlayer1" >
+                    <!-- <img class="card" src="assets/cartas/5C.png" alt=""> -->
 
                 </div>
 
-                <div class="board__cards__player cardsPlayer1" class="divCartas">
-                    <img class="card" src="assets/cartas/5C.png" alt="">
-                    <img class="card" src="assets/cartas/5C.png" alt="">
+                <div class="board__cards__player cardsPlayer0" >
+
 
                 </div>
 
@@ -46,21 +40,21 @@
         <div class="players">
 
             <div class="players__player player0">
-
+                
+                
                 <div class="player__logo"></div>
                 <div class="player__info">
-                    <h5 class="player__info__name">Banca</h5>
-                    <p class="player__info__points">Puntuación: <span class="points">10</span></p>
+                    <h5 class="player__info__name">Jugador </h5>
+                    <p class="player__info__points">Puntuación: <span class="points"></span></p>
                 </div>
-
+                
             </div>
-
-            <div class="players__player player1">
-
+            
+            <div  class="players__player player1">
                 <div class="player__logo"></div>
                 <div class="player__info">
                     <h5 class="player__info__name">Banca</h5>
-                    <p class="player__info__points">Puntuación: <span class="points">10</span></p>
+                    <p class="player__info__points">Puntuación: <span class="points"></span></p>
                 </div>
 
             </div>
@@ -68,15 +62,17 @@
         </div>
 
         <div class="buttons">
-            <button class="btn btn-danger">Nuevo Juego</button>
-            <button class="btn btn-primary">Pedir carta</button>
-            <button class="btn btn-primary">Detener</button>
+            <button id="btnNuevo" type="button" class="btn btn-danger">Nuevo Juego</button>
+            <button id="btnPedir" type="button" disabled class="btn btn-primary">Pedir carta</button>
+            <button id="btnDetener" type="button" disabled class="btn btn-primary" disabled>Detener</button>
         </div>
 
 
     </main>
 
+    <script src="/js/underscore-min.js"></script>
     <script src="/js/main.js"></script>
+
 </body>
 
 </html>

@@ -41,7 +41,7 @@ main {
 .board__cards {
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   padding: 2rem;
 }
@@ -51,6 +51,7 @@ main {
   position: relative;
   left: 45%;
   display: flex;
+
 }
 .card {
   position: relative;
@@ -69,14 +70,17 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .players__player {
   position: relative;
   display: flex;
+ 
+
 }
 
 .player__logo {
@@ -91,27 +95,31 @@ main {
 }
 .player__info__name {
   margin: 0;
+  margin-bottom: 0.3em;
   font-size: 1.2rem;
   color: #b4b4b4;
+  text-align: left;
 }
 .player__info__points {
+  text-align: left;
+
   font-size: 1rem;
   color: #ffffff;
   margin: 0;
 }
 
 .player0 {
-  bottom: 120px;
+  bottom: -120px;
 }
 .player0 .player__logo {
-  background-image: url(/assets/gamers/gamer0.png);
+  background-image: url(/assets/gamers/gamer1.png);
 }
 
 .player1 {
-  bottom: -120px;
+  bottom: 120px;
 }
 .player1 .player__logo {
-  background-image: url(/assets/gamers/gamer1.png);
+  background-image: url(/assets/gamers/gamer0.png);
 }
 
 
@@ -143,4 +151,8 @@ main {
 }
 .btn:hover {
   opacity: 0.8;
+}
+.btn:disabled{
+  opacity: 0.2;
+  cursor: default;
 }
