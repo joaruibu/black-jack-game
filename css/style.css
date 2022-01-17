@@ -112,6 +112,7 @@ main {
   bottom: -120px;
 }
 .player0 .player__logo {
+
   background-image: url(../assets/gamers/gamer1.png);
 }
 
@@ -120,6 +121,7 @@ main {
 }
 .player1 .player__logo {
   background-image: url(../assets/gamers/gamer0.png);
+
 }
 
 
