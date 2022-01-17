@@ -1,0 +1,146 @@
+/* ------------------ Generales  ------------------ */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #34495e;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header__title {
+  font-size: 3rem;
+  color: white;
+  font-weight: 300;
+  margin: 0;
+  padding: 2rem 0 0 2rem;
+}
+
+/* ------------------ Tablero  ------------------ */
+.board {
+  background-color: #23a484;
+  width: 50vw;
+  height: 50vh;
+  min-width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50vw;
+  border: 30px solid #2bcea5;
+  box-shadow: 12px 12px 24px 16px rgba(0, 0, 0, 0.171);
+}
+.board__cards {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.board__cards__player {
+  /* Desplazo desde la izq para mantener el origen cuando añada cartas */
+  position: relative;
+  left: 45%;
+  display: flex;
+}
+.card {
+  position: relative;
+  margin-left: -50px;
+  width: 90px;
+}
+
+
+/* ------------------ Players  ------------------ */
+.players {
+  width: 50vw;
+  height: 50vh;
+  min-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.players__player {
+  position: relative;
+  display: flex;
+}
+
+.player__logo {
+  width: 90px;
+  height: 90px;
+  border: 5px solid #577b9e;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 1rem;
+}
+.player__info__name {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #b4b4b4;
+}
+.player__info__points {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.player0 {
+  bottom: 120px;
+}
+.player0 .player__logo {
+  background-image: url(/assets/gamers/gamer0.png);
+}
+
+.player1 {
+  bottom: -120px;
+}
+.player1 .player__logo {
+  background-image: url(/assets/gamers/gamer1.png);
+}
+
+
+/* ------------------  Botones  ------------------ */
+.buttons {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  width: 140px;
+  color: white;
+  font-weight: 800;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn-danger {
+  background-color: rgba(255, 90, 90, 0.849);
+}
+.btn-primary {
+  background-color: #23a484;
+}
+.btn:hover {
+  opacity: 0.8;
+}

@@ -1,16 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Blackjack</title>
 </head>
+
 <body>
- 
-    
-  <script src="/js/main.js"></script>
+    <main>
+        <header class="header">
+            <h1 class="header__title"> Blackjack Game</h1>
+        </header>
+        <div class="board">
+
+            <div class="board__cards">
+
+                <div class="board__cards__player cardsPlayer0" class="divCartas">
+                    <img class="card" src="assets/cartas/5C.png" alt="">
+                    <img class="card" src="assets/cartas/5C.png" alt="">
+                    <img class="card" src="assets/cartas/5C.png" alt="">
+
+                    <img class="card" src="assets/cartas/5C.png" alt="">
+
+
+                </div>
+
+                <div class="board__cards__player cardsPlayer1" class="divCartas">
+                    <img class="card" src="assets/cartas/5C.png" alt="">
+                    <img class="card" src="assets/cartas/5C.png" alt="">
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="players">
+
+            <div class="players__player player0">
+
+                <div class="player__logo"></div>
+                <div class="player__info">
+                    <h5 class="player__info__name">Banca</h5>
+                    <p class="player__info__points">Puntuación: <span class="points">10</span></p>
+                </div>
+
+            </div>
+
+            <div class="players__player player1">
+
+                <div class="player__logo"></div>
+                <div class="player__info">
+                    <h5 class="player__info__name">Banca</h5>
+                    <p class="player__info__points">Puntuación: <span class="points">10</span></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-danger">Nuevo Juego</button>
+            <button class="btn btn-primary">Pedir carta</button>
+            <button class="btn btn-primary">Detener</button>
+        </div>
+
+
+    </main>
+
+    <script src="/js/main.js"></script>
 </body>
+
 </html>
