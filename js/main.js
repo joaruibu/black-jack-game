@@ -93,7 +93,7 @@ const moduloJuego = (() => {
             } else {
                 alert('Tio Gilito gana')
             }
-        }, 300);
+        }, 800);
     }
 
     //Turno ordenador
